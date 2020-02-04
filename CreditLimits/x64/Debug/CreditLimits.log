@@ -1,3 +1,4 @@
 ﻿  CustomerAccount.cpp
-C:\cis554_HW2_JDM\CreditLimits\CustomerAccount.cpp(36,16): warning C4129: 'm': unrecognized character escape sequence
-  CreditLimits.vcxproj -> C:\cis554_HW2_JDM\CreditLimits\x64\Debug\CreditLimits.exe
+  MetalManiaCustomerEntry.cpp
+  Generating Code...
+  CreditLimits.vcxproj -> C:\cis554\repo\CreditLimits\x64\Debug\CreditLimits.exe
