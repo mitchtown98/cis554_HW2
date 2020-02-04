@@ -1,12 +1,12 @@
 //****************************************************************//
-//	Author:				Jason Mitchell																	//
-//	Course:				CIS 554-M401 Object Oriented Programming in C++	//
-//	University:		Syracuse University															//
-//	Reference:		HW #2 - Exercise 4.14 p150											//
-//  Date:					01/29/2020																			//
-//	Filename:			METALMANIACUSTOMERENTRY.CPP										  //
-//	Synopsis:			Driver Program for Customer Account Class				//
-//																																//
+//	Author:		Jason Mitchell							          //
+//	Course:		CIS 554-M401 Object Oriented Programming in C++	  //
+//	University:	Syracuse University								  //
+//	Reference:	HW #2 - Exercise 4.14 p150						  //
+//  Date:		01/29/2020										  //
+//	Filename:	METALMANIACUSTOMERENTRY.CPP						  //
+//	Synopsis:	Driver Program for Customer Account Class		  //
+//																  //
 //****************************************************************//
 #include <iostream>
 #include "CustomerAccount.h"
@@ -35,11 +35,11 @@ int main()
 		/**
 		* Check for valid data entry: While not a valid type,
 		* stay in this while loop until the user enters a number.
-		*	 negative numbers are handled in the Invoice Class implementation
+		* negative numbers are handled in the Invoice Class implementation
 		*/
 		while (!(std::cin >> firstNameIn))
 		{
-			// new lines
+			// Ignore new lines
 			std::cin.ignore('\n');
 		}
 
@@ -50,7 +50,7 @@ int main()
 		/**
 		* Check for valid data entry: While not a valid type,
 		* stay in this while loop until the user enters a number.
-		*	 negative numbers are handled in the Invoice Class implementation
+		* negative numbers are handled in the Invoice Class implementation
 		*/
 		while (!(std::cin >> lastNameIn))
 		{
@@ -67,7 +67,7 @@ int main()
 		std::cin >> numberIn;
 
 		/** 
-		*	Use the 3 user inputs to construct 
+		* Use the 3 user inputs to construct 
 		* and object from the CustomerAccount class
 		*/
 		CustomerAccount myCustomer(firstNameIn, lastNameIn, numberIn);
@@ -90,9 +90,9 @@ int main()
 		// Local function for new line
 		myLine();
 
-		/*
-		*	Condition for while loop
-		*	A "Y" will execute the program again
+		/**
+		* Condition for while loop
+		* A "Y" will execute the program again
 		* anything else will end the program
 		*/
 		std::cout << "Enter 'Y' for another entry, or 'N' to exit. " << std::endl;

@@ -1,23 +1,23 @@
 //****************************************************************//
-//	Author:				Jason Mitchell																	//
-//	Course:				CIS 554-M401 Object Oriented Programming in C++	//
-//	University:		Syracuse University															//
-//	Reference:		HW #2 - Exercise 4.14 p150											//
-//  Date:					01/29/2020																			//
-//	Filename:			METALMANIADISPLAY.H															//
-//	Synopsis:			Ascii art for fun																//
-//																																//
+//	Author:		Jason Mitchell									  //
+//	Course:		CIS 554-M401 Object Oriented Programming in C++	  //
+//	University:	Syracuse University								  //
+//	Reference:  HW #2 - Exercise 4.14 p150						  //
+//  Date:		01/29/2020										  //
+//	Filename:	METALMANIADISPLAY.H								  //
+//	Synopsis:	Ascii art for fun								  //
+//																  //
 //****************************************************************//
 #pragma once
 #include<iostream>
 
 /**
-*	A little art to display at Startup
-* Source:		Charlie Weaver : guitar
-*						Paul Desjarlais : bass guitar
-*				    Bob Allison : amp and speaker
-*					  Bob Allison : compilation
-*						https://asciiart.website/index.php?art=music/musical%20instruments
+* A little art to display at Startup
+* Source: Charlie Weaver : guitar
+* Paul Desjarlais : bass guitar
+* Bob Allison : amp and speaker
+* Bob Allison : compilation
+* https://asciiart.website/index.php?art=music/musical%20instruments
 */
 void displayTitle()
 {

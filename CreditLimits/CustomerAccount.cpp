@@ -1,18 +1,18 @@
 //****************************************************************//
-//	Author:				Jason Mitchell																	//
-//	Course:				CIS 554-M401 Object Oriented Programming in C++	//
-//	University:		Syracuse University															//
-//	Reference:		HW #2 - Exercise 4.14 p150											//
-//  Date:					01/29/2020																			//
-//	Filename:			CUSTOMERACCOUNT.CPP															//
-//	Synopsis:			Customer Class Implementation										//
-//																																//
+//	Author:		Jason Mitchell									  //
+//	Course:		CIS 554-M401 Object Oriented Programming in C++	  //
+//	University:	Syracuse University								  //
+//	Reference:	HW #2 - Exercise 4.14 p150						  //
+//  Date:		01/29/2020										  //
+//	Filename:	CUSTOMERACCOUNT.CPP								  //
+//	Synopsis:	Customer Class Implementation					  //
+//																  //
 //****************************************************************//
 #include "CustomerAccount.H"
 #include <iomanip>
 
 /**
-*	Helper function to neatly display string data
+* Helper function to neatly display string data
 * It finds the length of the string and ouputs "=" under the string.
 */
 void lineDisplayAccountString(std::string display, std::string display1)
@@ -27,7 +27,7 @@ void lineDisplayAccountString(std::string display, std::string display1)
 }
 
 /**
-*	Helper function to neatly display string data and numbers
+* Helper function to neatly display string data and numbers
 * It finds the length of the string and ouputs "=" under the string.
 */
 void lineDisplayAccountValue(std::string display, double display1)
@@ -61,37 +61,35 @@ void CustomerAccount::setStartingBalance()
 // Set Incoming Charges
 void CustomerAccount::setAccountCharge()
 {
-	std::cout << "Input total Charges: " << std::flush; 
+	std::cout << "Input Charges: " << std::flush; 
 	std::cin >> currentCharges;
 }
 
 // Set Incoming Payments
 void CustomerAccount::setAccountCredit()
 {
-	std::cout << "Input total Credits: " << std::flush; 
+	std::cout << "Input Credits: " << std::flush; 
 	std::cin >> currentCredits;
 }
 
 // Set Account Credit Limit
 void CustomerAccount::setAccountLimit()
 {
-	std::cout << "Input starting credit limit: " << std::flush;
+	std::cout << "Input Credit Limit: " << std::flush;
 	std::cin >> _accountCreditLimit;
 	std::cout << std::endl; 
 }
 
 /**
-*	Set the Account balance based off of Charges less credits
-*	This also sets a "bool" if the limit is exceeded 
+* Set the Account balance based off of Charges less credits
+* This also sets a "bool" if the limit is exceeded 
 * If the calculated balance exceeds the credit limit, post a message
 * and display the account information.  Otherwise display the new balance
 */
 void CustomerAccount::setCurrentBalance()
 {
 	totalCharges = (startingBalance + currentCharges);
-	currentBalance = totalCharges - currentCredits;
-	_accountBalance = currentBalance - startingBalance;
-
+	_accountBalance = totalCharges - currentCredits;
 	if (_accountBalance > _accountCreditLimit)
 	{
 		creditLimitReached = true; 
