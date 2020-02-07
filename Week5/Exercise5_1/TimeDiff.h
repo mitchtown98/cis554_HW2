@@ -8,9 +8,9 @@
 class TimeDiff
 {
 public:
-	int secondsSinceNoon(int hr, int min, int sec);
+	int secondsSinceNoon(int hr = 0, int min = 0, int sec = 0);
 
 private:
-	bool validateTime(int hr, int min, int sec);
+	bool validateTime(int hr = 0, int min = 0, int sec = 0);
 
 };

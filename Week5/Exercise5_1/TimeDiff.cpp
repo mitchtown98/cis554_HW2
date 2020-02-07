@@ -5,7 +5,7 @@
 /////////////////////////////////////////////////////////////////
 #include "TimeDiff.h"
 
-int TimeDiff::secondsSinceNoon(int hr = 0, int min = 0, int sec = 0)
+int TimeDiff::secondsSinceNoon(int hr, int min, int sec)
 {
 	int seconds = 0;
 
@@ -31,7 +31,7 @@ int TimeDiff::secondsSinceNoon(int hr = 0, int min = 0, int sec = 0)
 	return seconds;
 }
 
-bool TimeDiff::validateTime(int hr = 0, int min = 0, int sec = 0)
+bool TimeDiff::validateTime(int hr, int min, int sec)
 {
 	if (hr > 23 || min >= 60 || sec >= 60 || hr < 0 || min < 0 || sec < 0)
 	{
